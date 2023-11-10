@@ -31,7 +31,7 @@ fin
 
 
 
-// Exercice 3
+// Exercice 4
 procédure triInsertion(tab : in_out tableau de entier) 
 debut
        pour (i variant_de 1 à taille(T) - 1)
