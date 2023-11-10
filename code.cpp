@@ -48,7 +48,13 @@ void insertSort (vector <unsigned> & vUint)
  
 void bubbleSort (vector <unsigned> & vUint)
 {
-//TODO
+ for(size_t i = size(vUint)-1; i > 0; i = i - 1){
+        for(size_t j = 0; j < i; j+= 1){
+            if(vUint[j+1] < vUint[j]){
+                swap(vUint[j+1], vUint[j]);
+            }
+        }
+    }
 }
  
 void countingSort (vector <unsigned> & vUint)
