@@ -63,3 +63,32 @@ debut
 fin
 
 // Exercie 5
+
+procedure triComptage (tab : in_out tableau_de entier)
+debut
+    declarer max : entier <- tab[0];
+    declarer min : entier <- 0;
+    pour (i variant_de 1 à taille(tab)-1)
+    faire
+        si(max < tab[i]) max <- tab[i];
+        si(min > tab[i]) min <- tab[i];
+    ffaire
+    declarer tabCompt : tableau_de max entier;
+    pour (i variant_de 0 à max-1)
+    faire
+        tabCompt[i] <- 0;
+    ffaire
+    pour (i variant_de 1 à taille(tab)-1)
+    faire
+        tabCompt[tab[i]-min+1] <- tabCompt[T[i]-min+1]+1;
+    ffaire
+    declarer i : entier_naturel <- 1;
+    pour(k variant_de 1 à (max-min+1))
+    faire
+        pour(j variant_de 1 à tabCompt[k])
+        faire
+            tab[i] <- k + min -1;
+            i <- i +1;
+        ffaire
+    ffaire
+fin
