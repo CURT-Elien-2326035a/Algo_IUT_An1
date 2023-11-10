@@ -1,3 +1,6 @@
+
+// Fait par Elien Curt et Hugo Valente
+
 // Exercice 1
 
 fonction estBienTrie(tab : in tableau_de entier) : renvoie booleen
