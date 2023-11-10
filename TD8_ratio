@@ -67,7 +67,7 @@ fin
 procedure triComptage (tab : in_out tableau_de entier)
 debut
     declarer max : entier <- tab[0];
-    declarer min : entier <- 0;
+    declarer min : entier <- tab[0];
     declarer i : entier_naturel <- 1;
     declarer tabCompt : tableau_de entier;
     pour (i variant_de 1 à taille(tab)-1)
