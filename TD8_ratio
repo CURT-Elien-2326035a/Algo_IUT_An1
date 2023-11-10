@@ -15,9 +15,9 @@ fin
 
 procédure triSelection(tab : in_out tableau de entier)
 debut
-    
       n <- longueur(t); 
       pour (i variant_de 0 à n - 2)
+        faire
           min <- i;
           pour (j variant_de i + 1 à n - 1)
             si (t[j] < t[min])
@@ -27,6 +27,7 @@ debut
           declarer varHold : entier <- t[i];
           t[i] <- t[min];
           t[min] <- varHold;
+        ffaire 
 fin
 
 // Exercice 3
@@ -50,6 +51,7 @@ fin
 procédure triInsertion(tab : in_out tableau de entier) 
 debut
        pour (i variant_de 1 à taille(T) - 1)
+        faire
             x <-T[i];
             j <- i;
             tant que (j > 0 ET T[j - 1] > x)
@@ -57,6 +59,7 @@ debut
                 j <- j - 1;
 
             T[j] <- x;
+        ffaire
 fin
 
 // Exercie 5
