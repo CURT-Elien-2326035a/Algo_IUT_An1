@@ -1,0 +1,34 @@
+
+
+//ex2
+
+procédure triSelection(tab : in_out tableau de entier)
+debut
+    
+      n <- longueur(t); 
+      pour (i variant_de 0 à n - 2)
+          min <- i;
+          pour (j variant_de i + 1 à n - 1)
+            si (t[j] < t[min])
+                min ← j;
+            fsi
+          si (min ne_vaut_pas i) 
+          declarer varHold : entier <- t[i];
+          t[i] <- t[min];
+          t[min] <- varHold;
+fin
+
+
+
+// ex3
+procédure triInsertion(tab : in_out tableau de entier) 
+debut
+       pour (i variant_de 1 à taille(T) - 1)
+            x <-T[i];
+            j <- i;
+            tant que (j > 0 ET T[j - 1] > x)
+                T[j] <- T[j - 1];
+                j <- j - 1;
+
+            T[j] <- x;
+fin
