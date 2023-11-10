@@ -29,7 +29,22 @@ debut
           t[min] <- varHold;
 fin
 
+// Exercice 3
 
+procedure tri_bulle(tab : in_out tableau_de entier)
+debut
+    pour (i variant_de taille(tab)-1 à 1)
+    faire
+        pour(j variant_de 0 à i-1)
+        faire
+            si(tab[j+1] > tab[j])
+                tmp <- tab[j];
+                tab[j] <- tab[j+1];
+                tab[j+1] <- tmp;
+            fsi
+        ffaire
+    ffaire
+fin
 
 // Exercice 4
 procédure triInsertion(tab : in_out tableau de entier) 
@@ -43,8 +58,5 @@ debut
 
             T[j] <- x;
 fin
-
-// Exercice 4
-
 
 // Exercie 5
