@@ -1,6 +1,17 @@
+// Exercice 1
 
+fonction estBienTrie(tab : in tableau_de entier) : renvoie booleen
+debut
+    pour (i variant_de 0 a taille(tab)-2) 
+    faire
+        si (tab[i] >= tab[i+1])
+            renvoie faux
+        fsi
+    ffaire
+    renvoie vrai
+fin
 
-//ex2
+// Exercice 2
 
 procédure triSelection(tab : in_out tableau de entier)
 debut
@@ -20,7 +31,7 @@ fin
 
 
 
-// ex3
+// Exercice 3
 procédure triInsertion(tab : in_out tableau de entier) 
 debut
        pour (i variant_de 1 à taille(T) - 1)
@@ -32,3 +43,8 @@ debut
 
             T[j] <- x;
 fin
+
+// Exercice 4
+
+
+// Exercie 5
